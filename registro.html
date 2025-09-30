@@ -6,22 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Formulario de Bolentin de Noticias</legend>
-            <label for="nombres" requerid>Nombres completos:</label>
-            <input type="text"  id="nombres"    name="nombres"  requerid><br><br>
-            
-            <label for="correo" requerid>Correo ELectronico:</label>
-            <input type="text"  id="correo"    name="correo"  requerid><br><br>
+    <header>
+        <h1>Navegacion</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pagina principal</a></li>
+                    <li><a href="#registro">Formulario de Registro</a></li>
+                    <li><a href="lenguajes.html">Formulario de Preferencias</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main id="registro">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario de Bolentin de Noticias</legend>
+                <label for="nombres" requerid>Nombres completos:</label>
+                <input type="text"  id="nombres"    name="nombres"  requerid><br><br>
+                
+                <label for="correo" requerid>Correo ELectronico:</label>
+                <input type="text"  id="correo"    name="correo"  requerid><br><br>
 
-            <label>
-            <input type="checkbox"  name="terminos" >Acepto recibir correos promocionales
-            </label><br><br>
+                <label>
+                <input type="checkbox"  name="terminos" >Acepto recibir correos promocionales
+                </label><br><br>
 
-            <button type="submit">Suscribirse</button>
-            <button type="reset">Borrar formulario</button>
-        </fieldset>
-    </form>
+                <button type="submit">Suscribirse</button>
+                <button type="reset">Borrar formulario</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
