@@ -8,40 +8,36 @@
 <body>
     <header>
         <h1>Lenguaje de Programacion</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pagina principal</a></li>
+                    <li><a href="registro.html">Formulario de Registro</a></li>
+                    <li><a href="#Lenguaje">Formulario de Preferencias</a></li>
+                </ul>
+            </nav>
     </header>
-<hr>
-    <nav>
-        <a href="index.html">Pagina principal</a>
-        <a href="registro.html">Formulario de Registro</a>
-        <a href="#Lenguaje">Formulario de Preferencias</a>
-    </nav>
-<hr>
+
     <section id="Lenguaje">
         <form action="#" method="post">
         <fieldset>
-            <legend>Formulario de Preferencias</legend>
-            <label for="Foto">Subir foto de perfil
-            <input type="fyle"  id="Foto"   name="Foto" accept="image/*" required><br><br>
-            </label>
+                <legend>Formulario de Preferencias</legend>
 
-            <label>¿Que lenguajes conoces?</label>
-            
-            <input type="checkbox"  id="html"   name="lenguajes" value="HTML"><br>
-            <label for="html">HTML</label>
+                <label for="Foto">Subir foto de perfil</label>
+                <input type="file"  id="Foto"   name="Foto" required><br><br>
 
-            <input type="checkbox"  id="css"   name="lenguajes" value="CSS"><br>
-            <label for="css">CSS</label>
+                <label for="lenguajes">¿Que lenguajes conoces?</label>
+                <input type="checkbox" name="lenguajes" value="HTML">HTML
+                <input type="checkbox" name="lenguajes" value="CSS">CSS
+                <input type="checkbox" name="lenguajes" value="JAVASCRIPT">JAVASCRIPT
+                <input type="checkbox" name="lenguajes" value="PYTHON">PYTHON
+                <input type="checkbox" name="lenguajes" value="JAVA">JAVA<br><br>
 
-            <input type="checkbox"  id="javascript"   name="lenguajes" value="JAVASCRIPT"><br>
-            <label for="javascript">JAVASCRIPT</label>
-            
-            <input type="checkbox"  id="python"   name="lenguajes" value="PYTHON"><br>
-            <label for="python">PYTHON</label>
-            
-            <input type="checkbox"  id="java"   name="lenguajes" value="JAVA"><br>
-            <label for="java">JAVA</label>
-        </fieldset>
-    </form>
+                <label for="numero">Cuantas horas de programación estudias al dia</label>
+                <input type="number"    id="numero" name="numero" min="1"><br><br>
+                
+                <button type="submit">Guardar</button>
+            </fieldset>
+        </form>
     </section>
 </body>
 </html>
