@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Ir a la pagina principal</a></li>
+                <li> <a href="lenguajes.html">Formulario Preferencia de Lenguajes</a></li>
+                <li> <a href="registro.html">Formulario de Registro</a></li>
+                <li> <a href="validacion.html">Formulario de Validación</a></li>
+                <li> <a href="#cursos">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cursos">
+         <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario de inscripción a un curso</legend>
+                <label for="nombre">Nombres:</label>
+                <input type="text"  id="nombre" name="nombre" required><br><br>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text"  id="apellido" name="apellido" required><br><br>
+
+                <label for="dni">Documento de Identidad:</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingresa tu DNI" 
+                pattern="[0-9]{8}" required><br><br>
+
+                <label for="correo">Correo ELectronico</label>
+                <input type="email" id="correo" name="correo"   placeholder="ejemplo@gmail.com" required><br><br>
+
+                <label for="curso">Curso</label>
+                    <select id="curso" name="curso">
+                    <option value="IDWEB">Introduccion al desarrollo web</option>
+                    <option value="DSO">Desarrollo de software</option>
+                    <option value="DSOO">Desarrollo de software orientado a objetos</option>
+                </select><br><br>
+
+                <label for="modalidad">Modalidad:</label>
+                <select id="modalidad"  name="modalidad">
+                    <option value="presencial">Presencial</option>
+                    <option value="virtual">Virtual</option>
+                </select><br><br>
+
+                <label for="horarios">Horarios disponibles: </label>
+                <input type="checkbox"  name="horarios" value="mañana">Mañana
+                <input type="checkbox"  name="horarios" value="tarde">Tarde
+                <input type="checkbox"  name="horarios" value="noche">Noche<br><br>
+
+                <label for="comentarios">Comentarios Adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Subir</button>
+                <button type="reset">Restablecer</button>
+            </fieldset>
+         </form>
+    </main>
+</body>
+</html>
